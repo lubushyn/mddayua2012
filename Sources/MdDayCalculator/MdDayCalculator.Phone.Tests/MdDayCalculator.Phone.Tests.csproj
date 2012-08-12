@@ -113,4 +113,5 @@
   </Target>
   -->
   <ProjectExtensions />
+  <Import Project="..\packages\WP7-CI\tools\WP7CI.targets" />
 </Project>
