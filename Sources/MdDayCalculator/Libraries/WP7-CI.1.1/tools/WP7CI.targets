@@ -23,7 +23,7 @@
                   UseEmulator="$(TestUseEmulator)"
                   PlatformId="$(TestPlaformId)"
                   DeviceId="$(TestDeviceId)"
-                  ApplicationProductId  = $(ApplicationProductId )
+                  ApplicationProductId  = "$(ApplicationProductId)""
                   UpdateApplication="$(TestUpdateApplication)"
                   />
   </Target>
