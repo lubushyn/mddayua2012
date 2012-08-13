@@ -10,6 +10,7 @@
     <TestUpdateApplication>false</TestUpdateApplication>
     <TestPlaformId></TestPlaformId>
     <TestDeviceId></TestDeviceId>
+    <ApplicationProductId >{86546b9b-4689-485f-b753-e8bc6d2ea59e}</ApplicationProductId >
 	<TestDependsOn>Build</TestDependsOn>
   </PropertyGroup>
 
@@ -22,6 +23,7 @@
                   UseEmulator="$(TestUseEmulator)"
                   PlatformId="$(TestPlaformId)"
                   DeviceId="$(TestDeviceId)"
+                  ApplicationProductId  = $(ApplicationProductId )
                   UpdateApplication="$(TestUpdateApplication)"
                   />
   </Target>
