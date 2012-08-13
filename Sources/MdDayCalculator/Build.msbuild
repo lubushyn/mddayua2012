@@ -1,7 +1,7 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
 <Import Project="BuildTargets\MSBuild.Community.Tasks.Targets"/>
 <Import Project="BuildTargets\StyleCop 4.7\StyleCop.Targets"/>
-<Import Project="\Libraries\WP7-CI.1.1\tools\WP7CI.targets" />
+<Import Project="Libraries\WP7-CI.1.1\tools\WP7CI.targets" />
 <UsingTask AssemblyFile="BuildTargets\MSBuild.Community.Tasks.dll" 
          TaskName="XmlUpdate" />
 <UsingTask AssemblyFile="BuildTargets\MSBuild.Community.Tasks.dll" 
