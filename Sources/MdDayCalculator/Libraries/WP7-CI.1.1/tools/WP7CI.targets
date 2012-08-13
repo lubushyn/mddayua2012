@@ -16,7 +16,7 @@
 
   <Target Name="Test" DependsOnTargets="$(TestDependsOn)">
 
-    <RunUnitTestsTask XapFile="$(MSBuildProjectDirectory)\$(OutputPath)\$(XapFilename)" 
+    <RunUnitTestsTask XapFile="$(MSBuildProjectDirectory)\\MdDayCalculator.Phone.Tests\Bin\Debug\MdDayCalculator.Phone.Tests.xap" 
                   ApplicationManifest="$(MSBuildProjectDirectory)\Properties\WMAppManifest.xml"
                   TestResultsFile="$(TestResultsFile)" 
                   DeleteLogFiles="$(DeleteTestLogFiles)"
