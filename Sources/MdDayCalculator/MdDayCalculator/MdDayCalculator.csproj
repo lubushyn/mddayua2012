@@ -56,8 +56,9 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="mscorlib.extensions" />
-    <Reference Include="WindowsPhoneTestFramework.Client.AutomationClient">
-      <HintPath>..\packages\WP7TestClient.0.9.6\lib\sl4-wp71\WindowsPhoneTestFramework.Client.AutomationClient.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Client.AutomationClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Client.AutomationClient.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

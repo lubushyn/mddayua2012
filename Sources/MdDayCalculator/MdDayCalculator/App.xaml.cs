@@ -12,6 +12,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using WindowsPhoneTestFramework.Client.AutomationClient;
 
 namespace MdDayCalculator
 {
@@ -57,7 +58,7 @@ namespace MdDayCalculator
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
 #if DEBUG
-            WindowsPhoneTestFramework.Client.AutomationClient.Automation.Instance.Initialise();
+			Automation.Instance.Initialise();
 #endif
 
         }

@@ -19,8 +19,8 @@ namespace MdDayCalculator.BDD.Tests
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.8.1.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Addition Tests")]
-    public partial class AdditionTestsFeature
+    [NUnit.Framework.DescriptionAttribute("MainPage")]
+    public partial class MainPageFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -32,8 +32,7 @@ namespace MdDayCalculator.BDD.Tests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Addition Tests", "  In order to test the calculator\r\n  As a WP7 User\r\n  I want to perform some addi" +
-                    "tions", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "MainPage", "In order to use MdDayCalculator\r\nAs a WP7 user\r\nI want to be read the main page", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,20 +65,20 @@ namespace MdDayCalculator.BDD.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Correctly add some numbers")]
-        public virtual void CorrectlyAddSomeNumbers()
+        [NUnit.Framework.DescriptionAttribute("Main Page loads after a few seconds")]
+        public virtual void MainPageLoadsAfterAFewSeconds()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Correctly add some numbers", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Main Page loads after a few seconds", ((string[])(null)));
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
-    testRunner.Given("my app is clean installed and running");
+ testRunner.Given("my app is clean installed and running");
 #line 8
-    testRunner.When("I enter \"2\" into the control \"tbFirstNumber\"");
+    testRunner.Then("I enter \"2\" into the control \"tbFirstNumber\"");
 #line 9
-    testRunner.And("I enter \"3\" into the control \"tbSecondNumber\"");
+    testRunner.Then("I enter \"3\" into the control \"tbSecondNumber\"");
 #line 10
-    testRunner.And("I press the control \"btnCalculate\"");
+    testRunner.Then("I press the control \"btnCalculate\"");
 #line 11
     testRunner.Then("I see the control \"tbResult\" contains \"6\"");
 #line hidden
