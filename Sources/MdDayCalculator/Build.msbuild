@@ -2,11 +2,6 @@
 <Import Project="BuildTargets\MSBuild.Community.Tasks.Targets"/>
 <Import Project="BuildTargets\StyleCop 4.7\StyleCop.Targets"/>
 <Import Project="Libraries\WP7-CI.1.1\tools\WP7CI.targets" />
-<!--<UsingTask AssemblyFile="BuildTargets\MSBuild.Community.Tasks.dll" 
-         TaskName="XmlUpdate" />
-<UsingTask AssemblyFile="BuildTargets\MSBuild.Community.Tasks.dll" 
-         TaskName="Xslt" />
-<UsingTask TaskName="StyleCopTask" AssemblyFile="BuildTargets\StyleCop 4.7\Microsoft.StyleCop.dll" />-->
     <PropertyGroup>
         <SourceFilesPath>$(MSBuildProjectDirectory)</SourceFilesPath>
         <StyleCopTreatErrorsAsWarnings>true</StyleCopTreatErrorsAsWarnings>
@@ -21,6 +16,7 @@
     <!--<Target Name="Build" DependsOnTargets="StyleCop">-->
       <Target Name="Build">
         <MSBuild Projects="%(SolutionItemsToBuild.Identity)" Targets="Build"/>
+        <Exec Command="Libraries\trx2html.exe MdDayCalculator.Phone.Tests\Bin\Debug\TestResults.trx"/>
     </Target>
 
 </Project>
