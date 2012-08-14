@@ -56,6 +56,9 @@ namespace MdDayCalculator
                 // and consume battery power when the user is not using the phone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
+#if DEBUG
+            WindowsPhoneTestFramework.Client.AutomationClient.Automation.Instance.Initialise();
+#endif
 
         }
 

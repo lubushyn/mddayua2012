@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdDayCalculator.SL.Tests.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trx2html", "trx2html\trx2html.csproj", "{1DF93D37-F740-42E3-81D6-FB648F4F2F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdDayCalculator.BDD.Tests", "MdDayCalculator.BDD.Tests\MdDayCalculator.BDD.Tests.csproj", "{0C60750B-9772-4230-93CF-30993B3CA8E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,16 @@ Global
 		{1DF93D37-F740-42E3-81D6-FB648F4F2F04}.Release|Mixed Platforms.Build.0 = Release|x86
 		{1DF93D37-F740-42E3-81D6-FB648F4F2F04}.Release|x86.ActiveCfg = Release|x86
 		{1DF93D37-F740-42E3-81D6-FB648F4F2F04}.Release|x86.Build.0 = Release|x86
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0C60750B-9772-4230-93CF-30993B3CA8E8}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
