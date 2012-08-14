@@ -81,44 +81,57 @@
     <Reference Include="WindowsInput">
       <HintPath>..\packages\WP7Test.0.9.6\lib\net40\WindowsInput.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.CommandLine.CommandLineHost">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.CommandLine.CommandLineHost.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.CommandLine.CommandLineHost, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.CommandLine.CommandLineHost.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.AndroidDeviceController">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.AndroidDeviceController.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.AndroidDeviceController, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.AndroidDeviceController.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.AndroidDisplayInputController.Windows">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.AndroidDisplayInputController.Windows.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.AndroidDisplayInputController.Windows, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.AndroidDisplayInputController.Windows.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.AutomationController.Android.Emulator">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.AutomationController.Android.Emulator.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.AutomationController.Android.Emulator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.AutomationController.Android.Emulator.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.AutomationController.WindowsPhone.Emulator">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.AutomationController.WindowsPhone.Emulator.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.AutomationController.WindowsPhone.Emulator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.AutomationController.WindowsPhone.Emulator.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.Core">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.Core.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.Core.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.DeviceController">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.DeviceController.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.DeviceController, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.DeviceController.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.DisplayInputControllerCore">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.DisplayInputControllerCore.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.DisplayInputControllerCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.DisplayInputControllerCore.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.FluentCore">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.FluentCore.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.FluentCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.FluentCore.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.Utils">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.Utils.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.Utils.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.WCFHostedAutomationController">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.WCFHostedAutomationController.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.WCFHostedAutomationController, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.WCFHostedAutomationController.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Server.WindowsPhoneDeviceController">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Server.WindowsPhoneDeviceController.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Server.WindowsPhoneDeviceController, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Server.WindowsPhoneDeviceController.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsPhoneTestFramework.Test.EmuSteps">
-      <HintPath>..\Libraries\aditional\WindowsPhoneTestFramework.Test.EmuSteps.dll</HintPath>
+    <Reference Include="WindowsPhoneTestFramework.Test.EmuSteps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WP7BDD\WindowsPhoneTestFramework.Test.EmuSteps.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

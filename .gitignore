@@ -14,3 +14,21 @@ obj/
 
 # mstest test results
 TestResults
+MdDayCalculator.SL.Tests.xap
+MdDayCalculator.SL.Tests.Web.csproj
+MdDayCalculator.SL.TestsTestPage.aspx
+MdDayCalculator.SL.TestsTestPage.html
+AssemblyInfo.cs
+Silverlight.js
+Web.Debug.config
+Web.Release.config
+Web.config
+MdDayCalculator.sln
+UpgradeLog.XML
+UpgradeLog.htm
+UpgradeReport.css
+UpgradeReport.xslt
+UpgradeReport_Error.png
+UpgradeReport_Information.png
+UpgradeReport_Success.png
+UpgradeReport_Warning.png
