@@ -17,11 +17,8 @@ namespace MdDayCalculator.Phone.Tests
         void MainPageLoaded(object sender, RoutedEventArgs e)
         {
             SystemTray.IsVisible = false;
-
-            var testPage = UnitTestSystem.CreateTestPage() as IMobileTestPage;
-            
-            BackKeyPress += (o, a) => a.Cancel = testPage.NavigateBack();
-            
+            var testPage = UnitTestSystem.CreateTestPage() as IMobileTestPage;            
+            BackKeyPress += (o, a) => a.Cancel = testPage.NavigateBack();       
             (Application.Current.RootVisual as PhoneApplicationFrame).Content = testPage;
         }
     }
