@@ -7,15 +7,32 @@
         <StyleCopTreatErrorsAsWarnings>true</StyleCopTreatErrorsAsWarnings>
         <SourceAnalysisEnabled>true</SourceAnalysisEnabled>
         <StyleCopForceFullAnalysis>true</StyleCopForceFullAnalysis>
+
+    <TestResultsFile></TestResultsFile>
+    <DeleteTestLogFiles>false</DeleteTestLogFiles>
+    <TestUseEmulator>true</TestUseEmulator>
+    <TestUpdateApplication>false</TestUpdateApplication>
+    <TestPlaformId></TestPlaformId>
+    <TestDeviceId></TestDeviceId>
+    <ApplicationProductId >{86546b9b-4689-485f-b753-e8bc6d2ea59e}</ApplicationProductId >
+    <TestDependsOn>Build</TestDependsOn>
     </PropertyGroup>
     <ItemGroup>
         <SolutionItemsToBuild Include="$(SourceFilesPath)\**\*.sln" />
         <StyleCopFiles Include="$(SourceFilesPath)\**\*.cs"/>
     </ItemGroup>
-
-    <!--<Target Name="Build" DependsOnTargets="StyleCop">-->
-      <Target Name="Build">
+    <Target Name="Build">
         <MSBuild Projects="%(SolutionItemsToBuild.Identity)" Targets="Build"/>
+        <RunUnitTestsTask XapFile="$(MSBuildProjectDirectory)\\MdDayCalculator.Phone.Tests\Bin\Debug\MdDayCalculator.Phone.Tests.xap" 
+                  ApplicationManifest="$(MSBuildProjectDirectory)\Properties\WMAppManifest.xml"
+                  TestResultsFile="$(TestResultsFile)" 
+                  DeleteLogFiles="$(DeleteTestLogFiles)"
+                  UseEmulator="$(TestUseEmulator)"
+                  PlatformId="$(TestPlaformId)"
+                  DeviceId="$(TestDeviceId)"
+                  ApplicationProductId  = "$(ApplicationProductId)"
+                  UpdateApplication="$(TestUpdateApplication)"
+                  />
         <Exec Command="Libraries\trx2html.exe MdDayCalculator.Phone.Tests\Bin\Debug\TestResults.trx"/>
     </Target>
 

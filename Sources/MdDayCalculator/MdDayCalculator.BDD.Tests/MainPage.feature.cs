@@ -32,7 +32,7 @@ namespace MdDayCalculator.BDD.Tests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "MainPage", "In order to use MdDayCalculator\r\nAs a WP7 user\r\nI want to be read the main page", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "MainPage", "In order to use MdDayCalculator\r\nAs a WP7 user\r\nI want to multiple two values", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,10 +65,10 @@ namespace MdDayCalculator.BDD.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Main Page loads after a few seconds")]
-        public virtual void MainPageLoadsAfterAFewSeconds()
+        [NUnit.Framework.DescriptionAttribute("Multiplication result is correct")]
+        public virtual void MultiplicationResultIsCorrect()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Main Page loads after a few seconds", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplication result is correct", ((string[])(null)));
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
@@ -81,6 +81,67 @@ this.ScenarioSetup(scenarioInfo);
     testRunner.Then("I press the control \"btnCalculate\"");
 #line 11
     testRunner.Then("I see the control \"tbResult\" contains \"6\"");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Both controls are empty")]
+        public virtual void BothControlsAreEmpty()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Both controls are empty", ((string[])(null)));
+#line 13
+this.ScenarioSetup(scenarioInfo);
+#line 14
+ testRunner.Given("my app is clean installed and running");
+#line 15
+ testRunner.Then("I press the control \"btnCalculate\"");
+#line 16
+ testRunner.Then("I see the control \"tbValidationMessage\" contains \"Please enter two numbers.\"");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("First control value is string")]
+        public virtual void FirstControlValueIsString()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("First control value is string", ((string[])(null)));
+#line 18
+this.ScenarioSetup(scenarioInfo);
+#line 19
+ testRunner.Given("my app is clean installed and running");
+#line 20
+ testRunner.Then("I enter \"invalid value\" into the control \"tbFirstNumber\"");
+#line 21
+ testRunner.Then("I enter \"3\" into the control \"tbSecondNumber\"");
+#line 22
+ testRunner.Then("I press the control \"btnCalculate\"");
+#line 23
+ testRunner.Then("I see the control \"tbValidationMessage\" contains \"Please enter a valid first numb" +
+                    "er.\"");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Second control is string")]
+        public virtual void SecondControlIsString()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Second control is string", ((string[])(null)));
+#line 25
+this.ScenarioSetup(scenarioInfo);
+#line 26
+ testRunner.Given("my app is clean installed and running");
+#line 27
+ testRunner.Then("I enter \"invalid value\" into the control \"tbSecondNumber\"");
+#line 28
+ testRunner.Then("I enter \"2\" into the control \"tbFirstNumber\"");
+#line 29
+ testRunner.Then("I press the control \"btnCalculate\"");
+#line 30
+ testRunner.Then("I see the control \"tbValidationMessage\" contains \"Please enter a valid second num" +
+                    "ber.\"");
 #line hidden
             this.ScenarioCleanup();
         }

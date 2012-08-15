@@ -101,26 +101,26 @@ namespace MdDayCalculator.ViewModels
         {
             if (string.IsNullOrWhiteSpace(FirstNumber) || string.IsNullOrWhiteSpace(SecondNumber))
             {
-                ValidationMessage = "Please enter two numbers.";
+                ValidationMessage = ApplicationResource.PLEASE_ENTER_TWO_NUMBERS;
                 return false;
             }
 
             if (FirstNumber.Any(character => !char.IsDigit(character)))
             {
-                ValidationMessage = "Please enter a valid first number.";
+                ValidationMessage = ApplicationResource.PLEASE_ENTER_VALID_FIRST_NUMBER;
                 return false;
             }
 
             if (SecondNumber.Any(character => !char.IsDigit(character)))
             {
-                ValidationMessage = "Please enter a valid second number.";
+                ValidationMessage = ApplicationResource.PLEASE_ENTER_VALID_SECOND_NUMBER;
                 return false;
             }
 
             ValidationMessage = string.Empty;
             return true;
         }
-
+    
         
     }
 }
